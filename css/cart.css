@@ -1,0 +1,337 @@
+/*******************************
+ *
+ *******************************/
+ 
+.bird
+{
+/*border: 4px solid #999;*/
+width: 100px;
+height: 30px;
+position: absolute;
+text-align: left;
+display: none;
+/*background: #F0F0F0;*/
+vertical-align: middle;
+font-size: 18px;
+} 	
+.blindLayer {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+bottom: 0;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 1001;
+display: none;
+}
+.bcontainer
+{
+background: none repeat scroll 0 0 #fff;
+border: 2px solid #999;
+position: fixed;
+padding: 20px;
+display: none;
+z-index: 1002;
+top: 40px;
+right: 40px;
+left: 40px;
+bottom: 40px;
+padding-bottom: 80px;
+}
+#overflw
+{
+position: absolute;
+overflow-y: auto;
+overflow-x: hidden;
+top: 115px;
+left: 21px;
+bottom: 80px;
+width: 97%;
+}
+#usdRate{
+font: normal 16px Verdana;
+clear: both;
+}
+#usdRate span{
+font-weight: bold;
+}
+#bfooter
+{
+position: absolute;
+bottom: 14px;
+right: 20px;
+}
+.emptybasket{
+text-align: center;
+padding-top: 100px;
+font: bold 38px Arial;
+}
+input.numpage 
+{
+vertical-align: -2px;
+width: 60px;
+}
+input.num
+{
+/*vertical-align: -2px;*/
+width: 60px;
+}
+#formToSend div {
+	position: relative;
+}
+.err {
+    font-size: 12px;
+    color: red;
+}
+.error-form {
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 18px;
+}
+#bcaption
+{
+background: #C0C0C0;
+
+}
+#bcaption td
+{
+border-right: 2px solid #999;
+font-weight: bold;
+text-align: center;	
+}
+#bcaption td {padding: 5px;}
+#bcaption td:nth-child(1) { width: 10%; }		/*ID*/
+#bcaption td:nth-child(2) { width: 24%; }		/*NAME*/
+#bcaption td:nth-child(3) { width: 18%; }		/*PRICE*/
+#bcaption td:nth-child(4) { width: 20%; }		/*NUM*/
+#bcaption td:nth-child(5) { width: 23%; }		/*SUM*/
+
+.bitem td
+{
+font: normal 18px Arial;
+color: #000;
+padding: 10px 0px;	
+border-bottom: 1px solid #999;	
+/*border-right: 2px solid #FFF;*/
+}
+
+.bitem td:nth-child(1) { width: 10%; text-align: center;}
+.bitem td:nth-child(2) { width: 24%; padding-left: 10px;}
+.bitem td:nth-child(3) { width: 18%; text-align: center;}
+.bitem td:nth-child(4) { width: 20%; text-align: center;}
+.bitem td:nth-child(5) { width: 23%; text-align: center;}
+
+#bsubject {
+display: block;
+float: left;
+}
+#bclose{
+float: right;
+cursor:pointer;
+}
+.bcloseitem {
+padding-left: 8%;
+background: url(../../../../images/elektrozip/delete_item.png) no-repeat center center;
+background-size:50px;
+cursor: pointer;
+}
+.bcontainer table
+{
+width: 100%;	
+}
+.bbutton
+{
+color: #999;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75);	
+padding: 5px;
+font: bold 16px Arial;	
+float: right;
+}
+
+/*bta*/
+#bsum
+{
+/*float: right;*/
+margin: 0 20px;	
+font: bold 24px Tahoma, Verdana;
+}
+.space {
+height: 20px;
+clear: both;
+}
+.popup {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #AFAFAE;
+	border-radius: 16px;
+    left: 50%;
+    margin-left: -265px;
+    padding: 25px 20px;
+    position: fixed;
+    top: 50px;
+    width: 550px;
+    z-index: 1010;
+    display: none;
+}
+#closeformtomail  {
+	float:right;
+	cursor:pointer;
+}
+.popup h4	{
+		margin-bottom: 4px;
+	}
+	.popup form	{
+		padding: 30px 0 0 0;
+	}
+	.popup input[type="text"]{
+		/*text-align: center;*/
+		/*font-style: italic;*/
+		display: block;
+		width: 98%;
+		margin-bottom: 10px;
+		border: 1px solid #D9D9D9;
+    	display: inline-block;
+    	height: 40px;
+    	line-height: 40px;
+    	padding-left: 8px;
+    	vertical-align: middle;
+	}
+	
+	
+	.popup .alignCenter	{
+		margin-top: 30px;
+	}
+	.popup textarea {
+    display: block;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    
+	}
+/*.basket_num
+	{
+	/*padding: 4px;
+	background: #F0F0F0;
+	width: 30px;
+
+	}*/
+input.btn-add
+	{
+	/*padding: 4px;*/
+	min-width: 30px;
+    padding: 4px 2px;
+    vertical-align: -2px;
+	}	
+.basket_num_buttons
+	{
+	width: 20px; 
+	height: 20px;
+	border: 1px solid #000;
+	margin: 0 5px;
+	display: inline-block;	
+	color: #FFF;
+	background: #000;
+	text-align: center;
+	cursor: pointer;	
+	}
+.modal{
+	top: 40%;
+	border-radius: 12px;
+	border: 3px solid #3C8ECD;
+	background-color: #E2EAFF;
+}
+.modal-open{
+	overflow: visible;
+}
+.modal-body{
+	text-align: center;
+	padding: 30px 15px;
+	font: bold 16px Arial;
+	color: #3C8ECD;
+	border-radius: 12px;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: transparent;
+}
+.blockOverlay{
+	opacity: 0.0 !important;
+}
+.quantity {
+  position: relative;
+}
+
+.quantity input[type=number]::-webkit-inner-spin-button,
+.quantity input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bcontainer input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 70px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}

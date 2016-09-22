@@ -1,0 +1,118 @@
+h1
+{
+color: #004080;
+font: bold 20px Arial;
+}
+.cart
+{
+width: 280px;
+height: 60px;
+
+top: 10px;
+right: 20px;
+border: 1px solid #1b68a5;
+border-radius: 10px;
+
+font: normal 11px Arial;
+margin-left:40px;
+float:right;
+display: block;
+position:relative;
+padding-bottom:10px;
+
+}
+.cart_fixed{
+width: 70px;
+height: 50px;
+border: 1px solid #1b68a5;
+border-radius: 10px;
+display: none;
+font: normal 11px Arial;
+/*margin-left:40px;*/
+/*position:relative;*/
+padding-bottom:10px;
+
+  position: fixed;
+  top: 10px;
+  right: 8px;
+  z-index: 1000;
+  background: #fff;
+}
+.numsinbasket{
+    font: bold 12px Arial;
+    border: 1px solid #1b68a5;
+    border-radius: 20px 0px 0px 20px;
+    background: #fff;
+    bottom: 6px;
+    right: -1px;
+    position: absolute;
+    display: block;
+    padding: 2px;
+    color: blue;
+    cursor: pointer;
+}
+.numsinbasket.display{
+	display: table-cell;
+}
+.priceinbasket 
+{
+/*margin: 12px;*/
+font: bold 15px Arial;
+border-radius: 10px;
+float:left;
+height:40px;
+padding:10px 0px;
+display: table-cell;
+vertical-align: middle;
+}
+
+/* a#basketwidjet {
+text-decoration: underline;
+ cursor:pointer;	
+}
+a#basketwidjet :hover {
+text-decoration: none;
+ } */
+ .priceinbasket span {
+text-decoration: underline;
+cursor:pointer;
+color:blue;
+}
+
+.priceinbasket span:hover {
+ text-decoration: none;
+}
+
+.clear_cart 
+{
+padding-right:20px;
+position: absolute;
+/*float:right;*/
+bottom: 6px;
+left:70px;
+
+
+}
+.clear_cart span
+{
+color: #000000;
+font: bold 14px Arial;
+text-decoration: underline;
+cursor:pointer;
+}
+.clear_cart span:hover {
+ text-decoration: none;
+}
+.basket
+{
+width: 60px;
+height:60px;
+float:left;
+background-image: url(../../../../images/elektrozip/shopping-basket.png);
+background-repeat: no-repeat;
+background-size:contain;
+margin: 0px 4px;
+cursor:pointer;
+
+	
+}
