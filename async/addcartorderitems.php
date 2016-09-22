@@ -7,9 +7,6 @@
     class Cart2_AddCartOrderItems_AsyncAction extends Basic_Abstract_AsyncAction
     {
         
-        /**
-         * Performs the action
-         */
         public function perform(array $_params = array())
         {
             $mySql = Application::getService('basic.mysqlmanager');
