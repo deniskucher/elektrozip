@@ -53,9 +53,11 @@
                 $mySql->insert('clients', array('name' => $name, 'email' => $email, 'phone' => $telephone, 'sales_channel'=>'Сайт: Корзина'));          
                 $client_id = $mySql->getInsertId();
             }
-                                  
-            $change_id_orders =  $mySql->update('orders', array('client_id' => $client_id, 'status' => 'ОФОРМЛЕНИЕ'), array('id' => $orderId));
             
+            //$this->data['id'] = $client_id;
+            
+            $change_id_orders =  $mySql->update('orders', array('client_id' => $client_id, 'status' => 'ОФОРМЛЕНИЕ'), array('id' => $orderId));
+            //$this->data['msg'] = 'UPDATE выполнился id_client_exist=false';
 
             $usdRate = $mySql->select('usdRate', 'orders', array('id' => $orderId))->fetchCellValue('usdRate');
             $subjectUser = "ElektroZip: Ваш заказ (".date("d.m.Y H:i").")"."\r\n";
@@ -79,7 +81,7 @@
                 $mail.= "<tr><td>".$item['code']."</td><td>".$item['name']."</td>";
                 $mail.= "<td>$".number_format($item['price'],2,'.', '')." (".number_format(($item['price']*$usdRate),2,'.', '')." грн)</td><td>".$item['requiredQuantity']."шт.</td><td>$".number_format($item['price']*$item['requiredQuantity'],2,'.', '')." (".number_format($item['price']*$item['requiredQuantity']*$usdRate,2,'.', '')." грн)</td></tr>";
                 $sumua += number_format(($item['price']*$usdRate*$item['requiredQuantity']),2,'.', '');
-                
+                //$sumua = strtr($sumua, array(','=>''));
                 $sumusd += number_format(($item['price']*$item['requiredQuantity']),2,'.', '');
             }
             
